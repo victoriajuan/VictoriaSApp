@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		589F7A9021769B7600C08182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A8F21769B7600C08182 /* AppDelegate.swift */; };
-		589F7A9221769B7600C08182 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A9121769B7600C08182 /* ViewController.swift */; };
+		589F7A9221769B7600C08182 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A9121769B7600C08182 /* Intro.swift */; };
 		589F7A9521769B7600C08182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589F7A9321769B7600C08182 /* Main.storyboard */; };
-		589F7A9721769B7B00C08182 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589F7A9621769B7B00C08182 /* Assets.xcassets */; };
 		589F7A9A21769B7B00C08182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589F7A9821769B7B00C08182 /* LaunchScreen.storyboard */; };
+		589F7AA82176B65100C08182 /* Imagines.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589F7AA72176B65100C08182 /* Imagines.xcassets */; };
+		589F7AAA2176DD8C00C08182 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AA92176DD8C00C08182 /* MainPage.swift */; };
+		589F7AAE2176EC9200C08182 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 589F7AAD2176EC9200C08182 /* Podfile */; };
+		589F7AB02176F3AB00C08182 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AAF2176F3AB00C08182 /* Map.swift */; };
+		C26F5C75FA143605922A9E06 /* libPods-VictoriaSApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C81660AB2CF5884161D45C0B /* libPods-VictoriaSApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56ECF1F9DA7F38E4DC707728 /* Pods-VictoriaSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoriaSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp.debug.xcconfig"; sourceTree = "<group>"; };
 		589F7A8C21769B7600C08182 /* VictoriaSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589F7A8F21769B7600C08182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		589F7A9121769B7600C08182 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		589F7A9121769B7600C08182 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
 		589F7A9421769B7600C08182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		589F7A9621769B7B00C08182 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		589F7A9921769B7B00C08182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		589F7A9B21769B7B00C08182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		589F7AA72176B65100C08182 /* Imagines.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagines.xcassets; sourceTree = "<group>"; };
+		589F7AA92176DD8C00C08182 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		589F7AAD2176EC9200C08182 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		589F7AAF2176F3AB00C08182 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		9A08B8CFD00CF2587E1864E1 /* Pods-VictoriaSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoriaSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp.release.xcconfig"; sourceTree = "<group>"; };
+		C81660AB2CF5884161D45C0B /* libPods-VictoriaSApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VictoriaSApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C26F5C75FA143605922A9E06 /* libPods-VictoriaSApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		249D4F186D65D13FFEDB986A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C81660AB2CF5884161D45C0B /* libPods-VictoriaSApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		589F7A8321769B7600C08182 = {
 			isa = PBXGroup;
 			children = (
+				589F7AAD2176EC9200C08182 /* Podfile */,
 				589F7A8E21769B7600C08182 /* VictoriaSApp */,
 				589F7A8D21769B7600C08182 /* Products */,
+				E8460AD7599763DA1887957D /* Pods */,
+				249D4F186D65D13FFEDB986A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +77,24 @@
 			isa = PBXGroup;
 			children = (
 				589F7A8F21769B7600C08182 /* AppDelegate.swift */,
-				589F7A9121769B7600C08182 /* ViewController.swift */,
+				589F7A9121769B7600C08182 /* Intro.swift */,
+				589F7AAF2176F3AB00C08182 /* Map.swift */,
+				589F7AA92176DD8C00C08182 /* MainPage.swift */,
 				589F7A9321769B7600C08182 /* Main.storyboard */,
-				589F7A9621769B7B00C08182 /* Assets.xcassets */,
 				589F7A9821769B7B00C08182 /* LaunchScreen.storyboard */,
 				589F7A9B21769B7B00C08182 /* Info.plist */,
+				589F7AA72176B65100C08182 /* Imagines.xcassets */,
 			);
 			path = VictoriaSApp;
+			sourceTree = "<group>";
+		};
+		E8460AD7599763DA1887957D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56ECF1F9DA7F38E4DC707728 /* Pods-VictoriaSApp.debug.xcconfig */,
+				9A08B8CFD00CF2587E1864E1 /* Pods-VictoriaSApp.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 589F7A9E21769B7B00C08182 /* Build configuration list for PBXNativeTarget "VictoriaSApp" */;
 			buildPhases = (
+				E923D78BCFD86EB3AD7B6FF1 /* [CP] Check Pods Manifest.lock */,
 				589F7A8821769B7600C08182 /* Sources */,
 				589F7A8921769B7600C08182 /* Frameworks */,
 				589F7A8A21769B7600C08182 /* Resources */,
+				A95678B903A1079CBE0A8C65 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,20 +158,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				589F7A9A21769B7B00C08182 /* LaunchScreen.storyboard in Resources */,
-				589F7A9721769B7B00C08182 /* Assets.xcassets in Resources */,
+				589F7AA82176B65100C08182 /* Imagines.xcassets in Resources */,
+				589F7AAE2176EC9200C08182 /* Podfile in Resources */,
 				589F7A9521769B7600C08182 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A95678B903A1079CBE0A8C65 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Versions/A/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E923D78BCFD86EB3AD7B6FF1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VictoriaSApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		589F7A8821769B7600C08182 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589F7A9221769B7600C08182 /* ViewController.swift in Sources */,
+				589F7A9221769B7600C08182 /* Intro.swift in Sources */,
 				589F7A9021769B7600C08182 /* AppDelegate.swift in Sources */,
+				589F7AB02176F3AB00C08182 /* Map.swift in Sources */,
+				589F7AAA2176DD8C00C08182 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,8 +367,10 @@
 		};
 		589F7A9F21769B7B00C08182 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56ECF1F9DA7F38E4DC707728 /* Pods-VictoriaSApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JD44B74N6A;
 				INFOPLIST_FILE = VictoriaSApp/Info.plist;
@@ -298,8 +387,10 @@
 		};
 		589F7AA021769B7B00C08182 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A08B8CFD00CF2587E1864E1 /* Pods-VictoriaSApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JD44B74N6A;
 				INFOPLIST_FILE = VictoriaSApp/Info.plist;

@@ -9,19 +9,135 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Intro-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="Intro" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroudIntro" translatesAutoresizingMaskIntoConstraints="NO" id="CFI-GL-6kZ">
+                                <rect key="frame" x="-407.66666666666669" y="-35.666666666666686" width="1190.3333333333333" height="883.33333333333348"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMk-hF-oDb" userLabel="LaunchButton">
+                                <rect key="frame" x="139" y="531" width="96" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dMk-hF-oDb" secondAttribute="height" multiplier="1:1" id="GU3-0c-aIT"/>
+                                </constraints>
+                                <state key="normal" image="powerButton"/>
+                                <connections>
+                                    <segue destination="GAm-Tz-C3d" kind="presentation" modalTransitionStyle="coverVertical" id="cmA-9p-FA3"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Want to          know more    about" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-q6-Xqf" userLabel="Intro">
+                                <rect key="frame" x="0.0" y="177" width="375" height="192"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.69209593534469604" green="0.15404734015464783" blue="0.89904934167861938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="45"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Victoria?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKy-MR-bP7">
+                                <rect key="frame" x="60" y="365" width="255" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.68847006559371948" green="0.15378108620643616" blue="0.89747220277786255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="55"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CFI-GL-6kZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Hj-da-VwQ"/>
+                            <constraint firstItem="dMk-hF-oDb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="123" id="8hg-x2-SXp"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="dMk-hF-oDb" secondAttribute="bottom" constant="151" id="DBi-GA-thM"/>
+                            <constraint firstItem="CFI-GL-6kZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6k-Yk-wb6"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dMk-hF-oDb" secondAttribute="trailing" constant="124" id="psX-Rs-lSX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="22.906403940886701"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="IGg-GS-s7i">
+            <objects>
+                <viewController id="mUr-QP-Aci" customClass="Map" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="trB-D9-kY0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="SQS-cL-9qs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RLs-MG-1K7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ghV-hg-QXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IRr-ES-3cm">
+            <objects>
+                <navigationController id="GAm-Tz-C3d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TeK-PX-XIG">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="mUr-QP-Aci" kind="relationship" relationship="rootViewController" id="KZt-FZ-mCe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KGr-mH-T9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="878" y="-798"/>
+        </scene>
+        <!--Main Page-->
+        <scene sceneID="mm8-d9-kWA">
+            <objects>
+                <viewController id="byV-3Q-9XJ" customClass="MainPage" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9gB-LE-m9T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-1W-jgP">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="269"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ZO-Ci-eeL">
+                                <rect key="frame" x="0.0" y="267" width="186" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99952012300491333" green="0.44957149028778076" blue="0.45161616802215576" alpha="0.70485805457746475" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-6y-b4a">
+                                <rect key="frame" x="186" y="267" width="189" height="272"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99937981367111206" green="0.63388949632644653" blue="0.40715599060058594" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZh-m2-4V8">
+                                <rect key="frame" x="0.0" y="539" width="186" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41474175453186035" green="0.81060272455215454" blue="0.3908989429473877" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-2Y-8W8">
+                                <rect key="frame" x="186" y="539" width="189" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35957741737365723" green="0.67618840932846069" blue="0.93186426162719727" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Nur-Qc-Rln"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToS-EW-ymY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2620" y="-81"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backgroudIntro" width="1190" height="883"/>
+        <image name="powerButton" width="96" height="96"/>
+    </resources>
 </document>
