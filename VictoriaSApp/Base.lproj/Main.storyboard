@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Intro-->
+        <!--Intro Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="Intro" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="IntroController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,16 +30,16 @@
                                     <segue destination="GAm-Tz-C3d" kind="presentation" modalTransitionStyle="coverVertical" id="cmA-9p-FA3"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Want to          know more    about" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-q6-Xqf" userLabel="Intro">
-                                <rect key="frame" x="0.0" y="177" width="375" height="192"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Things to     know about" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bO0-q6-Xqf" userLabel="Intro">
+                                <rect key="frame" x="0.0" y="192" width="375" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.69209593534469604" green="0.15404734015464783" blue="0.89904934167861938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="45"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Victoria?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKy-MR-bP7">
-                                <rect key="frame" x="60" y="365" width="255" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Victoria" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKy-MR-bP7">
+                                <rect key="frame" x="60" y="365" width="255" height="101"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="textColor" red="0.68847006559371948" green="0.15378108620643616" blue="0.89747220277786255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -62,10 +62,10 @@
             </objects>
             <point key="canvasLocation" x="56.799999999999997" y="22.906403940886701"/>
         </scene>
-        <!--Map-->
+        <!--Map Controller-->
         <scene sceneID="IGg-GS-s7i">
             <objects>
-                <viewController id="mUr-QP-Aci" customClass="Map" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mUr-QP-Aci" customClass="MapController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="trB-D9-kY0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,10 +73,145 @@
                         <viewLayoutGuide key="safeArea" id="SQS-cL-9qs"/>
                     </view>
                     <navigationItem key="navigationItem" id="RLs-MG-1K7"/>
+                    <connections>
+                        <segue destination="byV-3Q-9XJ" kind="presentation" identifier="MaptoMain" modalTransitionStyle="crossDissolve" id="ZK3-Pg-YlD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ghV-hg-QXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="878" y="-117"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FyJ-M3-nCd">
+            <objects>
+                <navigationController id="qhx-DH-Dly" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OrN-at-gOS">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7XB-S9-KmU" kind="relationship" relationship="rootViewController" id="Uv8-MP-zqU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ley-HX-uih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="586"/>
+        </scene>
+        <!--Projects View Controller-->
+        <scene sceneID="aRe-R3-VE7">
+            <objects>
+                <viewController id="7XB-S9-KmU" customClass="ProjectsViewController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vQP-Uc-JNy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Anj-bA-Otx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="H9g-0W-aZU">
+                                <rect key="frame" x="168" y="604" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.35957741739999999" green="0.67618840930000002" blue="0.93186426160000002" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TCT-va-Izc">
+                                <rect key="frame" x="0.0" y="88" width="375" height="636"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TCT-va-Izc" firstAttribute="top" secondItem="a3U-Ik-P9B" secondAttribute="top" id="EdW-cO-EVQ"/>
+                            <constraint firstItem="H9g-0W-aZU" firstAttribute="top" secondItem="a3U-Ik-P9B" secondAttribute="top" constant="516" id="G6E-Ab-4FA"/>
+                            <constraint firstItem="TCT-va-Izc" firstAttribute="centerX" secondItem="vQP-Uc-JNy" secondAttribute="centerX" id="JHP-DX-79p"/>
+                            <constraint firstItem="TCT-va-Izc" firstAttribute="centerY" secondItem="vQP-Uc-JNy" secondAttribute="centerY" id="Zqh-xH-cQr"/>
+                            <constraint firstItem="TCT-va-Izc" firstAttribute="leading" secondItem="vQP-Uc-JNy" secondAttribute="leading" id="ryf-va-RpL"/>
+                            <constraint firstItem="TCT-va-Izc" firstAttribute="centerX" secondItem="H9g-0W-aZU" secondAttribute="centerX" id="uca-74-sdD"/>
+                            <constraint firstItem="H9g-0W-aZU" firstAttribute="leading" secondItem="a3U-Ik-P9B" secondAttribute="leading" constant="168" id="xRj-xb-zJv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a3U-Ik-P9B"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zxg-VN-vM3"/>
+                    <connections>
+                        <outlet property="pageControl" destination="H9g-0W-aZU" id="LV6-Cz-a1H"/>
+                        <outlet property="scrollView" destination="TCT-va-Izc" id="c8E-Yr-ZNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n12-65-ugS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1704.8" y="585.96059113300498"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cth-ft-RcA">
+            <objects>
+                <navigationController id="9xm-EU-J5O" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BKw-2z-LPw">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tEb-UW-OCV" kind="relationship" relationship="rootViewController" id="Kl2-TC-fLV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cTL-Hc-lag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="586"/>
+        </scene>
+        <!--Experience View Controller-->
+        <scene sceneID="e4E-mW-YeQ">
+            <objects>
+                <viewController id="tEb-UW-OCV" customClass="ExperienceViewController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0BA-fI-NSd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZn-cG-FMi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sudo" translatesAutoresizingMaskIntoConstraints="NO" id="lgx-YL-hWZ">
+                                <rect key="frame" x="0.0" y="88" width="375" height="136"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdI-Bl-ZHA">
+                                <rect key="frame" x="10" y="543" width="355" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99559515714645386" green="0.0004407857486512512" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <state key="normal" title="Watch a video about SUDO event">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="sudoVideo:" destination="tEb-UW-OCV" eventType="touchUpInside" id="hKX-aO-K4T"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4fs-wg-Ru1">
+                                <rect key="frame" x="67" y="291" width="240" height="183.33333333333334"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">iSchool students at the University of Washington, trying to
+help students learn about the technology field who have
+interest in learning more.
+
+This year we held Code in the Dark hackathon, coding with spicy ramen, CPT/OPT info sessions, resume workshops.
+</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zBz-PA-mxW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Yue-Xz-xAp"/>
+                    <connections>
+                        <outlet property="sudoMain" destination="lgx-YL-hWZ" id="hi6-dL-G3O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ox9-RD-vVc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3309.5999999999999" y="585.96059113300498"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IRr-ES-3cm">
@@ -92,52 +227,304 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KGr-mH-T9L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="878" y="-798"/>
+            <point key="canvasLocation" x="878" y="-868"/>
         </scene>
-        <!--Main Page-->
+        <!--Main Page Controller-->
         <scene sceneID="mm8-d9-kWA">
             <objects>
-                <viewController id="byV-3Q-9XJ" customClass="MainPage" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPageController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="byV-3Q-9XJ" customClass="MainPageController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9gB-LE-m9T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-1W-jgP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="269"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ay8-bJ-pPk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6ZO-Ci-eeL">
-                                <rect key="frame" x="0.0" y="267" width="186" height="272"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ischool-logo" translatesAutoresizingMaskIntoConstraints="NO" id="9bL-1W-jgP">
+                                <rect key="frame" x="16" y="134" width="343" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99952012300491333" green="0.44957149028778076" blue="0.45161616802215576" alpha="0.70485805457746475" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHv-6y-b4a">
-                                <rect key="frame" x="186" y="267" width="189" height="272"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNi-ax-rwM">
+                                <rect key="frame" x="16" y="51" width="40" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99937981367111206" green="0.63388949632644653" blue="0.40715599060058594" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AZh-m2-4V8">
-                                <rect key="frame" x="0.0" y="539" width="186" height="273"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="GAm-Tz-C3d" kind="presentation" modalTransitionStyle="crossDissolve" id="Y78-NG-gOj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mKM-ak-qmY">
+                                <rect key="frame" x="0.0" y="267" width="187" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41474175453186035" green="0.81060272455215454" blue="0.3908989429473877" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="N3p-2Y-8W8">
-                                <rect key="frame" x="186" y="539" width="189" height="273"/>
+                                <color key="backgroundColor" red="0.99954122304916382" green="0.61117064952850342" blue="0.60986781120300293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="SKILLS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="1AC-tt-jNH" kind="presentation" identifier="skills" modalTransitionStyle="flipHorizontal" id="Hde-yO-Ipp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iDf-B1-fJt">
+                                <rect key="frame" x="0.0" y="540" width="187" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.35957741737365723" green="0.67618840932846069" blue="0.93186426162719727" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.58683091402053833" green="0.86672490835189819" blue="0.57207334041595459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="PROJECTS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="qhx-DH-Dly" kind="presentation" identifier="projects" modalTransitionStyle="flipHorizontal" id="OLD-Zo-aCk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iv-mg-DXi">
+                                <rect key="frame" x="187" y="267" width="188" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99603182077407837" green="0.73970800638198853" blue="0.58340710401535034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="CONTACT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ebb-zy-NG3" kind="presentation" identifier="contact" modalTransitionStyle="flipHorizontal" id="FSX-T6-UqO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAU-1K-ykL">
+                                <rect key="frame" x="187" y="540" width="188" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5499800443649292" green="0.77418321371078491" blue="0.94893711805343628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="EXPERIENCE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9xm-EU-J5O" kind="presentation" identifier="experience" modalTransitionStyle="flipHorizontal" id="PuK-Qh-AHp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Nur-Qc-Rln"/>
                     </view>
+                    <connections>
+                        <outlet property="educationButton" destination="8iv-mg-DXi" id="uXt-4F-9tL"/>
+                        <outlet property="experienceButton" destination="MAU-1K-ykL" id="GmC-7y-Asj"/>
+                        <outlet property="projectButton" destination="iDf-B1-fJt" id="T9E-IS-78b"/>
+                        <outlet property="skillButton" destination="mKM-ak-qmY" id="aCn-ZE-JXy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ToS-EW-ymY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="-81"/>
+            <point key="canvasLocation" x="1704.8" y="-117.48768472906404"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8fw-A2-MCE">
+            <objects>
+                <navigationController id="1AC-tt-jNH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rPj-8s-HfZ">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ut4-La-4bb" kind="relationship" relationship="rootViewController" id="WG7-CH-O5R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VBF-8E-Sib" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1745" y="-890"/>
+        </scene>
+        <!--Skills View Controller-->
+        <scene sceneID="jxo-m9-dz2">
+            <objects>
+                <viewController id="Ut4-La-4bb" customClass="SkillsViewController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="53g-RB-w4S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbT-dg-OaV">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="java" translatesAutoresizingMaskIntoConstraints="NO" id="6LQ-gv-Sip">
+                                <rect key="frame" x="68" y="107" width="71" height="118"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="python" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-Oe-Uw9">
+                                <rect key="frame" x="177" y="126" width="164" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swift" translatesAutoresizingMaskIntoConstraints="NO" id="V0m-Jr-seS">
+                                <rect key="frame" x="0.0" y="250" width="218" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="react" translatesAutoresizingMaskIntoConstraints="NO" id="Taq-Ik-erH">
+                                <rect key="frame" x="200" y="224" width="121" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="r" translatesAutoresizingMaskIntoConstraints="NO" id="Fop-at-BLh">
+                                <rect key="frame" x="46" y="366" width="83" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="d3" translatesAutoresizingMaskIntoConstraints="NO" id="M8P-0S-ENS">
+                                <rect key="frame" x="200" y="366" width="98" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ts" translatesAutoresizingMaskIntoConstraints="NO" id="KXh-pQ-VUo">
+                                <rect key="frame" x="211" y="487" width="98" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="js_html_css" translatesAutoresizingMaskIntoConstraints="NO" id="ZmV-CL-0F8">
+                                <rect key="frame" x="46" y="605" width="290" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sql" translatesAutoresizingMaskIntoConstraints="NO" id="Adx-Lk-80F">
+                                <rect key="frame" x="32" y="494" width="110" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="ESy-Kj-AIa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sat-aE-dYX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjp-6y-0NH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2469.5999999999999" y="-890.39408866995075"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bMC-w0-Xga">
+            <objects>
+                <navigationController id="ebb-zy-NG3" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nB7-X8-2Cn">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2wb-yp-Z5m" kind="relationship" relationship="rootViewController" id="nUo-gn-1nM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3A4-5h-evY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2569" y="-171"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="fHD-Dd-Ew0">
+            <objects>
+                <viewController id="2wb-yp-Z5m" customClass="ContactViewController" customModule="VictoriaSApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2iC-6U-kBe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DU0-Ur-aeV">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97246891260147095" green="0.95289880037307739" blue="0.92132765054702759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u7n-39-fkY" customClass="RoundButton" customModule="VictoriaSApp" customModuleProvider="target">
+                                <rect key="frame" x="25" y="310" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99954122304916382" green="0.61117064952850342" blue="0.60986781120300293" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Linkedin">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Linkedin:" destination="2wb-yp-Z5m" eventType="touchUpInside" id="XiQ-RQ-EOa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB8-0B-ytT" customClass="RoundButton" customModule="VictoriaSApp" customModuleProvider="target">
+                                <rect key="frame" x="25" y="498" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.58683091402053833" green="0.86672490835189819" blue="0.57207334041595459" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Email">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="sendEmail:" destination="2wb-yp-Z5m" eventType="touchUpInside" id="C3h-V5-Heu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTp-Ls-Xw0" customClass="RoundButton" customModule="VictoriaSApp" customModuleProvider="target">
+                                <rect key="frame" x="199" y="497" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5499800443649292" green="0.77418321371078491" blue="0.94893711805343628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Call">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="call:" destination="2wb-yp-Z5m" eventType="touchUpInside" id="5fT-zC-Szr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zcR-ZW-PWa" customClass="RoundButton" customModule="VictoriaSApp" customModuleProvider="target">
+                                <rect key="frame" x="199" y="310" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99603182077407837" green="0.73970800638198853" blue="0.58340710401535034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Github">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="75"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="Github:" destination="2wb-yp-Z5m" eventType="touchUpInside" id="5Hm-uK-tAv"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Yiran Juan a.k.a. Victoria" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g82-WC-nFG">
+                                <rect key="frame" x="46" y="141" width="282" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="0.3351906000473211" green="0.65975967639593902" blue="0.31841102094719342" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="WhD-Jl-SZd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6it-IK-5Zt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="11K-cA-Qfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3309.5999999999999" y="-171.42857142857144"/>
         </scene>
     </scenes>
     <resources>
         <image name="backgroudIntro" width="1190" height="883"/>
+        <image name="d3" width="1878.2608642578125" height="1782.7825927734375"/>
+        <image name="ischool-logo" width="600" height="100"/>
+        <image name="java" width="419" height="768"/>
+        <image name="js_html_css" width="3960" height="1500"/>
         <image name="powerButton" width="96" height="96"/>
+        <image name="python" width="360" height="180"/>
+        <image name="r" width="724" height="561"/>
+        <image name="react" width="330" height="400"/>
+        <image name="sql" width="450" height="236.25"/>
+        <image name="sudo" width="1266" height="463"/>
+        <image name="swift" width="940" height="400"/>
+        <image name="ts" width="225" height="225"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="cmA-9p-FA3"/>
+    </inferredMetricsTieBreakers>
 </document>

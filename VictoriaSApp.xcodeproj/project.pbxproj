@@ -7,29 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58707F0D217763A30090366C /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F0C217763A30090366C /* SkillsViewController.swift */; };
+		58707F0F2177F0290090366C /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F0E2177F0290090366C /* ContactViewController.swift */; };
+		58707F112177F3190090366C /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F102177F3190090366C /* ProjectsViewController.swift */; };
+		58707F132177F3310090366C /* ExperienceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F122177F3310090366C /* ExperienceViewController.swift */; };
+		58707F1521780AF00090366C /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F1421780AF00090366C /* RoundButton.swift */; };
+		58707F1721782AB60090366C /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58707F1621782AB60090366C /* Slide.swift */; };
+		58707F1921782AFE0090366C /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58707F1821782AFE0090366C /* Slide.xib */; };
 		589F7A9021769B7600C08182 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A8F21769B7600C08182 /* AppDelegate.swift */; };
-		589F7A9221769B7600C08182 /* Intro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A9121769B7600C08182 /* Intro.swift */; };
+		589F7A9221769B7600C08182 /* IntroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7A9121769B7600C08182 /* IntroController.swift */; };
 		589F7A9521769B7600C08182 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589F7A9321769B7600C08182 /* Main.storyboard */; };
 		589F7A9A21769B7B00C08182 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 589F7A9821769B7B00C08182 /* LaunchScreen.storyboard */; };
 		589F7AA82176B65100C08182 /* Imagines.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 589F7AA72176B65100C08182 /* Imagines.xcassets */; };
-		589F7AAA2176DD8C00C08182 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AA92176DD8C00C08182 /* MainPage.swift */; };
+		589F7AAA2176DD8C00C08182 /* MainPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AA92176DD8C00C08182 /* MainPageController.swift */; };
 		589F7AAE2176EC9200C08182 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 589F7AAD2176EC9200C08182 /* Podfile */; };
-		589F7AB02176F3AB00C08182 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AAF2176F3AB00C08182 /* Map.swift */; };
+		589F7AB02176F3AB00C08182 /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589F7AAF2176F3AB00C08182 /* MapController.swift */; };
+		58B11BB221788A89001A9170 /* sudoVideo.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 58B11BB121788A89001A9170 /* sudoVideo.mp4 */; };
 		C26F5C75FA143605922A9E06 /* libPods-VictoriaSApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C81660AB2CF5884161D45C0B /* libPods-VictoriaSApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		56ECF1F9DA7F38E4DC707728 /* Pods-VictoriaSApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoriaSApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp.debug.xcconfig"; sourceTree = "<group>"; };
+		58707F0C217763A30090366C /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		58707F0E2177F0290090366C /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		58707F102177F3190090366C /* ProjectsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewController.swift; sourceTree = "<group>"; };
+		58707F122177F3310090366C /* ExperienceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewController.swift; sourceTree = "<group>"; };
+		58707F1421780AF00090366C /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		58707F1621782AB60090366C /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
+		58707F1821782AFE0090366C /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		589F7A8C21769B7600C08182 /* VictoriaSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VictoriaSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		589F7A8F21769B7600C08182 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		589F7A9121769B7600C08182 /* Intro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intro.swift; sourceTree = "<group>"; };
+		589F7A9121769B7600C08182 /* IntroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroController.swift; sourceTree = "<group>"; };
 		589F7A9421769B7600C08182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		589F7A9921769B7B00C08182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		589F7A9B21769B7B00C08182 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		589F7AA72176B65100C08182 /* Imagines.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Imagines.xcassets; sourceTree = "<group>"; };
-		589F7AA92176DD8C00C08182 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
+		589F7AA92176DD8C00C08182 /* MainPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageController.swift; sourceTree = "<group>"; };
 		589F7AAD2176EC9200C08182 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		589F7AAF2176F3AB00C08182 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		589F7AAF2176F3AB00C08182 /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		58B11BB121788A89001A9170 /* sudoVideo.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = sudoVideo.mp4; sourceTree = "<group>"; };
 		9A08B8CFD00CF2587E1864E1 /* Pods-VictoriaSApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VictoriaSApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-VictoriaSApp/Pods-VictoriaSApp.release.xcconfig"; sourceTree = "<group>"; };
 		C81660AB2CF5884161D45C0B /* libPods-VictoriaSApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VictoriaSApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,6 +73,7 @@
 		589F7A8321769B7600C08182 = {
 			isa = PBXGroup;
 			children = (
+				58B11BB121788A89001A9170 /* sudoVideo.mp4 */,
 				589F7AAD2176EC9200C08182 /* Podfile */,
 				589F7A8E21769B7600C08182 /* VictoriaSApp */,
 				589F7A8D21769B7600C08182 /* Products */,
@@ -77,13 +94,20 @@
 			isa = PBXGroup;
 			children = (
 				589F7A8F21769B7600C08182 /* AppDelegate.swift */,
-				589F7A9121769B7600C08182 /* Intro.swift */,
-				589F7AAF2176F3AB00C08182 /* Map.swift */,
-				589F7AA92176DD8C00C08182 /* MainPage.swift */,
+				589F7A9121769B7600C08182 /* IntroController.swift */,
+				589F7AAF2176F3AB00C08182 /* MapController.swift */,
+				589F7AA92176DD8C00C08182 /* MainPageController.swift */,
+				58707F0C217763A30090366C /* SkillsViewController.swift */,
+				58707F0E2177F0290090366C /* ContactViewController.swift */,
+				58707F102177F3190090366C /* ProjectsViewController.swift */,
+				58707F122177F3310090366C /* ExperienceViewController.swift */,
 				589F7A9321769B7600C08182 /* Main.storyboard */,
 				589F7A9821769B7B00C08182 /* LaunchScreen.storyboard */,
 				589F7A9B21769B7B00C08182 /* Info.plist */,
 				589F7AA72176B65100C08182 /* Imagines.xcassets */,
+				58707F1421780AF00090366C /* RoundButton.swift */,
+				58707F1621782AB60090366C /* Slide.swift */,
+				58707F1821782AFE0090366C /* Slide.xib */,
 			);
 			path = VictoriaSApp;
 			sourceTree = "<group>";
@@ -157,10 +181,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58707F1921782AFE0090366C /* Slide.xib in Resources */,
 				589F7A9A21769B7B00C08182 /* LaunchScreen.storyboard in Resources */,
 				589F7AA82176B65100C08182 /* Imagines.xcassets in Resources */,
 				589F7AAE2176EC9200C08182 /* Podfile in Resources */,
 				589F7A9521769B7600C08182 /* Main.storyboard in Resources */,
+				58B11BB221788A89001A9170 /* sudoVideo.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,10 +246,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589F7A9221769B7600C08182 /* Intro.swift in Sources */,
+				58707F1521780AF00090366C /* RoundButton.swift in Sources */,
+				58707F132177F3310090366C /* ExperienceViewController.swift in Sources */,
+				589F7A9221769B7600C08182 /* IntroController.swift in Sources */,
+				58707F0F2177F0290090366C /* ContactViewController.swift in Sources */,
 				589F7A9021769B7600C08182 /* AppDelegate.swift in Sources */,
-				589F7AB02176F3AB00C08182 /* Map.swift in Sources */,
-				589F7AAA2176DD8C00C08182 /* MainPage.swift in Sources */,
+				589F7AB02176F3AB00C08182 /* MapController.swift in Sources */,
+				58707F0D217763A30090366C /* SkillsViewController.swift in Sources */,
+				589F7AAA2176DD8C00C08182 /* MainPageController.swift in Sources */,
+				58707F112177F3190090366C /* ProjectsViewController.swift in Sources */,
+				58707F1721782AB60090366C /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
